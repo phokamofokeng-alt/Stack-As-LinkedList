@@ -8,6 +8,9 @@ public class StackAsMyLinkedList <T>
 
     }
 
+    
+    // Remember with Stack, yoou add to top of stack. So the front of Stack.
+    // Hence we use prepend and not append
     // Add element to Stack (front of stack)
     public void push(T element)
     {
@@ -15,6 +18,9 @@ public class StackAsMyLinkedList <T>
         theStack.prepend(element);
     }
 
+    
+    // Similarly when we delete, we remove the one last added to Stack. 
+    // So we remove the first element of stack
     // Remove element (from front of stack)
     public T pop()
     {
@@ -31,6 +37,7 @@ public class StackAsMyLinkedList <T>
         }
 
     }
+
 
     // toString method
     public String toString()
